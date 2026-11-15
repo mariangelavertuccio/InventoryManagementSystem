@@ -1,71 +1,63 @@
 # Inventory Management System
 
-Un semplice sistema di gestione dell'inventario sviluppato in **C++17** come progetto pratico di portfolio.
+A C++17 application developed as a personal project to manage products and inventory operations through a simple console interface.
 
-## Funzionalità
+## Overview
 
-- Inserimento di nuovi prodotti con ID, nome, prezzo e quantità
-- Visualizzazione dell'inventario
-- Ricerca di un prodotto tramite ID
-- Modifica dei dati di un prodotto
-- Eliminazione di un prodotto con conferma
-- Calcolo del valore totale di ogni prodotto e dell'intero inventario
-- Salvataggio automatico dei dati in `prodotti.txt`
-- Caricamento automatico dei dati all'avvio
-- Controllo degli input e gestione di valori non validi
+The application allows users to manage an inventory by adding, searching, updating and removing products. It also keeps track of product quantities and calculates the total value of the inventory.
 
+Data is stored locally in a text file, so the inventory is available again when the application is restarted.
 
-## Tecnologie e concetti C++
+## Main Features
 
-- C++17
-- `struct`
-- `vector`
-- Funzioni
-- Cicli e condizioni (`do-while`, `for`, `switch`)
-- Riferimenti e parametri
-- Input/output da console
-- Lettura e scrittura su file (`fstream`)
-- Ricerca e gestione degli elementi in un contenitore
+- Add new products with ID, name, price and quantity
+- Display the current inventory
+- Search for products by ID
+- Update existing product information
+- Remove products with confirmation
+- Calculate individual and total inventory value
+- Save and load inventory data automatically
+- Validate user input and handle invalid entries
 
-## Requisiti
+## Technologies
 
-È necessario un compilatore C++ che supporti lo standard C++17, ad esempio GCC.
+- **Language:** C++17
+- **Data structures:** `struct`, `std::vector`
+- **File handling:** `fstream`
+- **Programming concepts:** Functions, loops, conditions, references and input validation
+- **Tools:** GCC, Visual Studio Code, Git and GitHub
 
-## Compilazione ed esecuzione
+## Build and Run
 
-Da terminale, nella cartella del progetto:
+Compile the project using GCC:
 
 ```bash
 g++ main.cpp -std=c++17 -Wall -Wextra -o inventory.exe
 ```
 
-Su Windows PowerShell:
+Run on Windows:
 
 ```powershell
 .\inventory.exe
 ```
 
-Su Linux/macOS:
+On Linux/macOS:
 
 ```bash
 ./inventory
 ```
 
-## Persistenza dei dati
+## Data Storage
 
-Il programma crea automaticamente il file `prodotti.txt` nella cartella da cui viene eseguito. I dati vengono salvati dopo ogni inserimento, modifica o eliminazione e ricaricati al successivo avvio.
+The application uses a local file named `prodotti.txt` to store inventory information.
 
-Il file `prodotti.txt` è un file dati generato dal programma e non è necessario caricarlo su GitHub.
+Product data is saved after changes and loaded automatically when the application starts.
 
-## Possibili sviluppi futuri
+## Future Improvements
 
-- Separazione del codice in più file (`.h` e `.cpp`)
-- Test automatici
-- Interfaccia grafica
-- Database SQLite
-- Gestione di categorie e fornitori
-- Report e statistiche avanzate
+Further development may include:
+- Organizing the source code into separate header and implementation files
+- Adding automated tests
+- Introducing a database for data storage
+- Expanding inventory management with categories and suppliers
 
-## Autrice
-
-Progetto personale di Mariangela Vertuccio
