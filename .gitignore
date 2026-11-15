@@ -1,0 +1,12 @@
+# Eseguibili
+*.exe
+*.out
+inventory
+
+# File generati dall'applicazione
+prodotti.txt
+
+# File temporanei/editor
+.vscode/
+*.o
+*.obj
