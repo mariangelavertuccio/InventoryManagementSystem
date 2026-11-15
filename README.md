@@ -14,6 +14,7 @@ Un semplice sistema di gestione dell'inventario sviluppato in **C++17** come pro
 - Caricamento automatico dei dati all'avvio
 - Controllo degli input e gestione di valori non validi
 
+
 ## Tecnologie e concetti C++
 
 - C++17
