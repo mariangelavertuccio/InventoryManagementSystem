@@ -1,0 +1,22 @@
+
+name: C++ Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile tests
+        run: g++ tests/inventory_tests.cpp -std=c++17 -Wall -Wextra -pedantic -o inventory_tests
+
+      - name: Run tests
+        run: ./inventory_tests
