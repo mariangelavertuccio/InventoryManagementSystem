@@ -277,7 +277,7 @@ void mostraMenu() {
     cout << "0. Esci\n";
     cout << "----------------------------------------\n";
 }
-
+#ifndef UNIT_TEST
 int main() {
     vector<Prodotto> prodotti;
     caricaInventario(prodotti);
