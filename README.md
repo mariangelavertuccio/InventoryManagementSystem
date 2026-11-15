@@ -67,4 +67,4 @@ Il file `prodotti.txt` è un file dati generato dal programma e non è necessari
 
 ## Autrice
 
-Progetto personale realizzato per esercitarsi con la programmazione C++ e lo sviluppo di applicazioni gestionali.
+Progetto personale di Mariangela Vertuccio
